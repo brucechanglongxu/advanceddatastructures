@@ -1,4 +1,4 @@
-**Separate Chaining:** We can maintain a linked list within every hash-map entry, and grow this to be longer as we continue to add elements. 
+**Separate Chaining:** We can maintain a linked list within every hash-map entry, and grow this to be longer as we continue to add elements. The down-side to this is that there could be a lot of "unused" space within our hash-table (for example if the entire chain clumps together on one element). 
 
 **Open Addressing:** This is a technique that is used to resolve collisions within our hash map. In linear probing, if h(y) is hashed to the same place as h(x), then we should place our element immediately to the right of the collision area. To overcome the problems with linear probing, we should try **quadratic probing**. We begin with our hash value (the first element that we put in this space), and if we have a collision, we should try put our element in $h + 1^2, h + 2^2, h + 3^2$ and so on, in order to prevent data from "clumping" together. 
 
