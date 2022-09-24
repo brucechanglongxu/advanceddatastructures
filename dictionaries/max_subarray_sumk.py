@@ -14,6 +14,8 @@ class Solution:
 		for n in nums:
 			curSum += n
 			diff = curSum - k
+			# check if there is a contiguous subarray with sum equal to diff
 			res += prefixSums.get(diff, 0)		
+			# if there is, then we should increment diff by the total number of such sums
 			prefixSums[diff] = 1 + prefixSums.get(curSum, 0)	
 		return res	
