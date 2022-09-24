@@ -1,6 +1,6 @@
-**Separate Chaining:**
+**Separate Chaining:** We can maintain a linked list within every hash-map entry, and grow this to be longer as we continue to add elements. 
 
-**Open Addressing:**
+**Open Addressing:** This is a technique that is used to resolve collisions within our hash map. In linear probing, if h(y) is hashed to the same place as h(x), then we should place our element immediately to the right of the collision area. 
 
 1. Universal and k-wise independent
 
