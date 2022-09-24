@@ -1,4 +1,6 @@
 # Find the total number of subarrays whose sum is equal to k
+# if the numbers within our array can only be positive then we could use two pointers
+# otherwise we need to use the prefix sum approach
 
 class Solution:
 	"""
