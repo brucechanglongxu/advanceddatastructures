@@ -1,4 +1,4 @@
-# Maximum subarray sum that equals k
+# Find the total number of subarrays whose sum is equal to k
 
 class Solution:
 	"""
