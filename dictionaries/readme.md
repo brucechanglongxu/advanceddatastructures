@@ -1,3 +1,7 @@
+**Separate Chaining:**
+
+**Open Addressing:**
+
 1. Universal and k-wise independent
 
 <p align="center">
