@@ -11,7 +11,13 @@ One hash function we can choose is a "totally random" hash function, where we un
 <img width="637" alt="image" src="https://user-images.githubusercontent.com/49863684/192110711-01e100e1-a844-4959-933f-22a25578a1d2.png">
 </p>
 
-**k-wise independence:** We would like to find a family $$H$$ of hash functions 
+**k-wise independence:** We would like to find a family $H$ of hash functions that satisfies the following:
+
+<p align="center">
+<img width="635" alt="image" src="https://user-images.githubusercontent.com/49863684/192110832-a4734230-5635-4d8e-b6cf-b99562bc908a.png">
+</p>
+
+In general, we can construct a polynomial of degree k, take that modulo p and modulo m (where the coefficients are arbitrary numbers between $0$ and $p$. Note that this is a very expensive $O(k)$ hash function. 
 
 2. Simple tabulation hashing
 3. Chaining and perfect hashing
