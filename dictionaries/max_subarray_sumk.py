@@ -11,11 +11,9 @@ class Solution:
 		curSum = 0
 		# the key represents the sum, and the value represents no. of times it has occured so far
 		prefixSums = { 0 : 1 }
-
 		for n in nums:
 			curSum += n
 			diff = curSum - k
 			res += prefixSums.get(diff, 0)		
-			prefixSums[diff] = 1 + prefixSums.get(curSum, 0)
-			
+			prefixSums[diff] = 1 + prefixSums.get(curSum, 0)	
 		return res	
