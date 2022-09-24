@@ -1,5 +1,18 @@
-# Given an array consisting of n integers and integer k, we need to find the minimum range in
-# the array [l, r] such that there are exactly k different numbers. If such subarray
-# doesn't exist, then we should print "invalid k"
+# Maximum subarray sum that equals k
 
+class Solution:
+	"""
+	We use a prefix sum and hashmap approach
+	"""
+	def subarrayDivByK(self, A:List[int], K: int) -> int:
+		res = 0
+		curSum = 0
+		prefixSums = { 0 : 1 }
 
+		for n in nums:
+			curSum += n
+			diff = curSum - k
+			res += prefixSums.get(diff, 0)		
+			prefixSums[diff] = 1 + prefixSums.get(curSum, 0)
+
+		return res	
