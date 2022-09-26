@@ -14,3 +14,7 @@ A B-tree has a parameter called the branching factor, which is a lower bound on 
 $$B \le \textit{Number of Children} < 2B$$
 $$B - 1 \le \textit{Number of Keys} < 2B - 1$$
 Furthermore, we find that our B-tree is completely balanced i.e. all of the leaves are at the same depth. 
+
+**How search works:** In general, we bring in a key $k$, and search through all of the values within the node that we are looking at. Find where $k$ fits in, and go down the appropriate path (either left or right); this is very similar to a normal binary search tree. 
+
+**How insertion works:** 
