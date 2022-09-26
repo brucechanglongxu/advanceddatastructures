@@ -11,4 +11,4 @@ Fusion trees provide us with $O(log_w n)$ predecessor and successor. With the tw
 
 There are dynamic versions of fusion trees, which is $O(\log_w + \log \log n)$ deterministic. 
 
-**Idea:** We wouuld like a B-tree with branching factor $w^{1/5}$. 
+**Idea:** We would like a B-tree with branching factor $w^{1/5}$. 
