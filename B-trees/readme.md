@@ -24,3 +24,10 @@ Furthermore, we find that our B-tree is completely balanced i.e. all of the leav
 <p align="center">
 <img width="254" alt="image" src="https://user-images.githubusercontent.com/49863684/192348894-a6bda45e-61e5-4c33-95d7-acf454d84ebc.png">
 </p>
+
+Now that we have an overflowed node, we will apply the **split** operation. We will split the node into two parts, by removing the middle node, and moving this into the parent node. Now if our **root** begins to overflow, we should apply this split property on the root, and move the middle node upwards. If we need to continue to do this all the way to the root, then we should split the root and introduce a new singular node as the new root. 
+
+<p align="center">
+<img width="230" alt="image" src="https://user-images.githubusercontent.com/49863684/192349506-cf0209a4-c002-44f1-9447-050032da5b54.png">
+</p>
+
