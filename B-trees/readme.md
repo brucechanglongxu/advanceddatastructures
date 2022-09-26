@@ -31,3 +31,4 @@ Now that we have an overflowed node, we will apply the **split** operation. We w
 <img width="230" alt="image" src="https://user-images.githubusercontent.com/49863684/192349506-cf0209a4-c002-44f1-9447-050032da5b54.png">
 </p>
 
+**How Deletion Works:** For deletion, again we can begin by using the normal deletion heuristic for BSTs. A problem will occur when we delete a node, and it becomes underfull. 
