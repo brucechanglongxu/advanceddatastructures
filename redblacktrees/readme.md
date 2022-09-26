@@ -1,4 +1,4 @@
-What hapepns when our binary search tree is unbalanced? A red-black-tree is a specific type of balanced search tree that satisfies the following criteria.
+What hapepns when our binary search tree is unbalanced? A red-black-tree is a specific type of balanced search tree that satisfies the following criteria (the colouring is a mechanism used to ensure the balanced property). 
 
 1. A node is either red or black
 2. The root and leaves (NIL) are black
