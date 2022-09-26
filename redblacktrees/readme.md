@@ -12,3 +12,9 @@ What hapepns when our binary search tree is unbalanced? A red-black-tree is a sp
 **Extra Notes:** Nodes require one storage bit to keep track of colour. The longest path (root to farthest NIL) is no more than twice the length of the shortest path (root nearest NIL). The shortest path is all black nodes, whilst the longest path alternates between red and black. 
 
 Search is the same as for a normal binary search tree, however insertion and deletion require "swaps" in order to maintain the red-black-tree properties. 
+
+**Insertions:** Red-black trees are a type of self-balancing binary search trees, when we insert a new node, the tree must be rebalanced and ensure that all new properties are met. 
+
+1. Insert Z and colour it red
+2. We should recolour and rotate nodes to fix violation
+
