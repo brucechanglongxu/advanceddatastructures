@@ -10,11 +10,17 @@ In general, we would like to make the number of nodes in a B-tree equal to the w
 <img width="367" alt="image" src="https://user-images.githubusercontent.com/49863684/192346102-d70c5998-312f-4bd2-9e06-52a4fb02a234.png">
 </p>
 
-A B-tree has a parameter called the branching factor, which is a lower bound on the number of chidlren of every node (except for the root node and the leaves). 
+A B-tree has a parameter called the branching factor ($B$ is chosen according to the cache size e.g. $2B$ should be around the size of the cache), which is a lower bound on the number of chidlren of every node (except for the root node and the leaves). 
 $$B \le \textit{Number of Children} < 2B$$
 $$B - 1 \le \textit{Number of Keys} < 2B - 1$$
 Furthermore, we find that our B-tree is completely balanced i.e. all of the leaves are at the same depth. 
 
 **How search works:** In general, we bring in a key $k$, and search through all of the values within the node that we are looking at. Find where $k$ fits in, and go down the appropriate path (either left or right); this is very similar to a normal binary search tree. 
 
-**How insertion works:** 
+**How insertion works:** We can begin by inserting as usual, searching through the tree until we land upon a node where we would like to insert. However there is a risk that this node will overflow. Suppose that we have a B-tree with $B = 4$. We see that in this case, the minimum number of keys is equal to $3$, whilst the maximum number of keys is equal to $6$. Suppose, however we do have a case where we insert into the seventh node. 
+
+**How insertion works:** We can begin by inserting as usual, searching through the tree until we land upon a node where we would like to insert. However there is a risk that this node will overflow. Suppose that we have a B-tree with $B = 4$. We see that in this case, the minimum number of keys is equal to $3$, whilst the maximum number of keys is equal to $6$. Suppose, however we do have a case where we insert into the seventh node.
+
+<p align="center">
+<img width="254" alt="image" src="https://user-images.githubusercontent.com/49863684/192348894-a6bda45e-61e5-4c33-95d7-acf454d84ebc.png">
+</p>
