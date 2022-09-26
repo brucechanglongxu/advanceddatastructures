@@ -9,3 +9,5 @@ In general, we would like to make the number of nodes in a B-tree equal to the w
 <p align="center">
 <img width="367" alt="image" src="https://user-images.githubusercontent.com/49863684/192346102-d70c5998-312f-4bd2-9e06-52a4fb02a234.png">
 </p>
+
+A B-tree has a parameter called the branching factor, which is a lower bound on the number of chidlren of every node (except for the root node). 
