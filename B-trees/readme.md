@@ -10,7 +10,7 @@ In general, we would like to make the number of nodes in a B-tree equal to the w
 <img width="367" alt="image" src="https://user-images.githubusercontent.com/49863684/192346102-d70c5998-312f-4bd2-9e06-52a4fb02a234.png">
 </p>
 
-A B-tree has a parameter called the branching factor, which is a lower bound on the number of chidlren of every node (except for the root node). 
+A B-tree has a parameter called the branching factor, which is a lower bound on the number of chidlren of every node (except for the root node and the leaves). 
 $$B \le \textit{Number of Children} < 2B$$
 $$B - 1 \le \textit{Number of Keys} < 2B - 1$$
 Furthermore, we find that our B-tree is completely balanced i.e. all of the leaves are at the same depth. 
