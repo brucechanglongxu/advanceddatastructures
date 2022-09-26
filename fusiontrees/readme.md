@@ -1,0 +1,8 @@
+Fusion Trees:
+
+1. Sketch and why it's enough
+2. Approximate sketch via. multiplication
+3. Parallel comparison
+4. Most significant set bit 
+
+Fusion trees provide us with $O(log_w n)$ predecessor and successor. 
