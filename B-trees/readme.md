@@ -12,4 +12,4 @@ In general, we would like to make the number of nodes in a B-tree equal to the w
 
 A B-tree has a parameter called the branching factor, which is a lower bound on the number of chidlren of every node (except for the root node). 
 $$B \le \textit{Number of Children} < 2B$$
-$$$$
+$$B - 1 < \textit{Number of Keys} < 2B - 1$$
